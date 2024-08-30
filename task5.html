@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <style>
+        /* 5 Tag Selectors */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        /* 20 Class Selectors */
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #218838;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .grid-item {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .content {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-card {
+            background-color: #ffc107;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .profile-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #dc3545;
+            color: white;
+            border-radius: 50px;
+            font-size: 12px;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            background-color: #ffd700;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        .navbar {
+            background-color: #343a40;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar ul li {
+            color: white;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #17a2b8;
+            margin: 10px;
+            border-radius: 4px;
+        }
+
+        .box.large {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 20 ID Selectors */
+        #header-title {
+            font-size: 24px;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        #intro {
+            background-color: #17a2b8;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        #main-content {
+            padding: 20px;
+        }
+
+        #footer-text {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        #cta-button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #cta-button:hover {
+            background-color: #218838;
+        }
+
+        #profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        #status {
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        #contact-form {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #nav-bar {
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        #side-menu {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        #notification {
+            padding: 10px;
+            background-color: #dc3545;
+            color: white;
+            border-radius: 4px;
+        }
+
+        #quote-box {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 20px;
+        }
+
+        #highlighted-text {
+            background-color: #ffd700;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        #skills {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        #skills .skill-item {
+            background-color: #ffc107;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            width: 100px;
+            text-align: center;
+        }
+
+        #project-list {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        #project-list li {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        #team-members {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        #team-members .member {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="nav-bar" class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <header class="header">
+            <h1 id="header-title">CSS Properties Example</h1>
+        </header>
+        <div id="intro">
+            <p>Welcome to the example page showcasing various CSS properties, IDs, classes, and tag selectors!</p>
+        </div>
+        <div id="main-content" class="content">
+            <h2>Content Section</h2>
+            <p>This is an example of a paragraph styled with CSS.</p>
+            <ul id="project-list">
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+            </ul>
+            <div class="grid-container">
+                <div class="grid-item">Grid 1</div>
+                <div class="grid-item">Grid 2</div>
+                <div class="grid-item">Grid 3</div>
+            </div>
+            <div id="skills">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+            </div>
+            <div id="team-members">
+                <div class="member">Alice</div>
+                <div class="member">Bob</div>
+                <div class="member">Charlie</div>
+            </div>
+        </div>
+        <div id="highlighted-text" class="highlight">Highlighted Text</div>
+        <div id="quote-box" class="quote">"This is an example of a blockquote."</div>
+        <div id="footer" class="footer">
+           
